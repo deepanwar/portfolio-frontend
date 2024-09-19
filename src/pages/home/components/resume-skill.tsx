@@ -1,35 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import RefactorLogoSq from "@/assets/refactorq-sq-logo.svg";
-import dayjs from "dayjs";
 import RevealAnimation from "@/components/common/reveal-animation";
-
-const resume = [
-  {
-    company: "RefactorQ",
-    position: "Jr. React Developer",
-    date: {
-      start: "01/10/2023",
-      end: "Present",
-    },
-    description: "Description",
-    logo: RefactorLogoSq,
-  },
-  {
-    company: "RefactorQ",
-    position: "React Developer - Internship",
-    date: {
-      start: "01/06/2023",
-      end: "01/10/2023",
-    },
-    description: "Description",
-    logo: RefactorLogoSq,
-  },
-];
-
-const formatDate = (date: string) => {
-  if (!dayjs(date).isValid()) return date;
-  return dayjs(date).format("MMM YYYY");
-};
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { resume } from "@/data/resume";
+import { formatDate } from "@/utils/date";
 
 const ResumeSkill = () => {
   return (

@@ -8,7 +8,7 @@ const navlinks = [
   },
   {
     title: "About",
-    link: "#",
+    link: "/about",
   },
   {
     title: "Experience",
