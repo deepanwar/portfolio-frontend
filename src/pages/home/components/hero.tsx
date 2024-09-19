@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import ProfilePic from "@/assets/deepak-pp.png";
+import ProfilePic from "@/assets/deepak-pp-transparent.png";
 
 const Hero = () => {
   return (
@@ -49,7 +49,7 @@ const Hero = () => {
         </Card>
 
         {/* right */}
-        <div className="rounded-3xl overflow-hidden">
+        <div className="rounded-3xl overflow-hidden bg-foreground">
           <img src={ProfilePic} alt="hero-image" className="w-full " />
         </div>
       </div>

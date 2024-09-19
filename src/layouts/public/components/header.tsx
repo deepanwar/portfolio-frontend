@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navlinks = [
   {
     title: "Home",
-    link: "#",
+    link: "/",
   },
   {
     title: "About",
@@ -19,7 +20,7 @@ const navlinks = [
   },
   {
     title: "Contact",
-    link: "#",
+    link: "/contact",
   },
 ];
 
@@ -31,14 +32,13 @@ const Header = () => {
           scale: 1.1,
           transition: { duration: 0.3 },
         }}
-        // whileTap={{ scale: 0.9 }}
         className="bg-foreground rounded-2xl px-6 py-2"
       >
         <nav>
           <ul className="flex items-center justify-center gap-4 text-secondary font-medium">
             {navlinks?.map(({ title, link }) => (
               <li key={title}>
-                <a href={link}>{title}</a>
+                <Link to={link}>{title}</Link>
               </li>
             ))}
           </ul>
