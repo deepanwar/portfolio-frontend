@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import PublicLayout from "./layouts/public";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import Contact from "./pages/contact";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </>
